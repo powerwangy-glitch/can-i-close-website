@@ -383,15 +383,67 @@ section[id] {
 
 .tool-grid div {
   min-height: 86px;
-  display: grid;
-  place-items: center;
-  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
   border: 1px solid var(--line);
   border-radius: 22px;
   color: var(--ink);
   background: rgba(255, 253, 250, 0.72);
   font-weight: 760;
   box-shadow: 0 14px 40px rgba(43, 38, 31, 0.06);
+}
+
+.tool-mark {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(44, 39, 32, 0.1);
+  border-radius: 13px;
+  color: var(--ink);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(244, 239, 230, 0.72));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 8px 20px rgba(43, 38, 31, 0.08);
+  font-size: 18px;
+  font-weight: 860;
+  line-height: 1;
+}
+
+.mark-codex {
+  color: #1f1d19;
+}
+
+.mark-claude {
+  color: #b66b2a;
+}
+
+.mark-cursor {
+  color: #2b2a27;
+}
+
+.mark-windsurf {
+  color: #277a92;
+}
+
+.mark-codeium {
+  color: #365fdf;
+}
+
+.mark-trae {
+  color: #7a4be8;
+}
+
+.mark-coze {
+  color: #17653e;
+  letter-spacing: 1px;
+}
+
+.mark-terminal {
+  color: #23211d;
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 15px;
 }
 
 .privacy-panel {
