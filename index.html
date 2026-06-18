@@ -19,144 +19,138 @@
         <img src="assets/app-icon.png" alt="" class="brand-icon">
         <span>能合盖么？</span>
       </a>
-      <nav class="nav">
-        <a href="#scenarios">场景</a>
-        <a href="#features">功能</a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#close">合盖判断</a>
+        <a href="#run">一键陪跑</a>
+        <a href="#battery">预计续航</a>
         <a href="#privacy">隐私</a>
       </nav>
       <a class="nav-cta" href="https://apps.apple.com/cn/app/%E8%83%BD%E5%90%88%E7%9B%96%E4%B9%88/id6774018434?mt=12">App Store</a>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero panel">
         <div class="hero-copy">
           <p class="eyebrow">vibe coding 陪跑助手</p>
-          <h1>AI 任务还在跑，<br>能合盖么？</h1>
-          <p class="hero-subtitle">跑 Codex、Claude Code、Cursor、扣子、Terminal 等长任务时，合盖或离开前先确认：任务还在不在、电量够不够、哪里可能有风险。</p>
+          <h1>Claude Code 还在跑，<br>我能离开吗？</h1>
+          <p class="lead">能合盖么？把 AI 长任务、电源、屏幕和预计续航放到一个菜单栏小窗口里。离开电脑前，先看一眼，不靠猜。</p>
           <div class="hero-actions">
             <a class="primary-button" href="https://apps.apple.com/cn/app/%E8%83%BD%E5%90%88%E7%9B%96%E4%B9%88/id6774018434?mt=12">去 App Store 下载</a>
-            <a class="secondary-button" href="#scenarios">看看它怎么帮你</a>
-          </div>
-          <div class="hero-notes" aria-label="产品特点">
-            <span>Mac 菜单栏</span>
-            <span>本机运行</span>
-            <span>不读代码内容</span>
+            <a class="secondary-button" href="#close">看它怎么判断</a>
           </div>
         </div>
-
-        <div class="hero-visual" aria-label="能合盖么？产品界面预览">
-          <div class="desktop-card">
-            <div class="window-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <img src="assets/app-store-01-can-i-close.png" alt="能合盖么？合盖前确认界面">
+        <div class="hero-stage">
+          <img class="app-icon-large" src="assets/app-icon.png" alt="能合盖么？图标">
+          <div class="screen-frame">
+            <img src="assets/app-store-01-can-i-close.png" alt="合盖前确认界面">
           </div>
-          <div class="floating-card">
-            <span class="status-dot"></span>
-            <strong>Claude Code 还在跑？</strong>
-            <p>先判断，再离开。</p>
+          <div class="micro-card">
+            <span></span>
+            <strong>先别合盖</strong>
+            <p>Claude Code 正在跑，当前环境有中断风险。</p>
           </div>
         </div>
       </section>
 
-      <section class="problem-strip" aria-label="核心问题">
-        <div>
-          <strong>不是又一个复杂效率系统。</strong>
-          <span>它只回答一个高频问题：我现在能不能安心离开电脑？</span>
+      <section class="belief">
+        <p>普通工具告诉你“已开启”。</p>
+        <h2>它要回答的是：这次离开，会不会出事？</h2>
+      </section>
+
+      <section class="story panel" id="close">
+        <div class="story-copy">
+          <span class="step">01</span>
+          <p class="eyebrow">合盖前确认</p>
+          <h2>不是让你盲目合盖，<br>而是先告诉你风险。</h2>
+          <p>当 Codex、Claude Code、Cursor 或 Terminal 还在跑，能合盖么？会结合电源、屏幕和任务状态，给一个更接近人话的判断。</p>
+          <div class="answer-card">
+            <strong>它解决的问题</strong>
+            <span>“我现在能不能离开电脑？”</span>
+          </div>
+        </div>
+        <div class="story-media">
+          <img src="assets/app-store-01-can-i-close.png" alt="现在能不能合盖的判断页面">
         </div>
       </section>
 
-      <section class="section" id="scenarios">
-        <div class="section-heading">
-          <p class="eyebrow">4 个高频场景</p>
-          <h2>给跑长任务的人，一点确定感。</h2>
+      <section class="story panel reverse" id="run">
+        <div class="story-copy">
+          <span class="step">02</span>
+          <p class="eyebrow">一键陪跑</p>
+          <h2>长任务开始后，<br>给它一段安静时间。</h2>
+          <p>高频入口直接放在首页：30 分钟、1 小时、一直陪跑。适合生成代码、导出、下载、跑脚本这些“不想一直盯着，但又怕中断”的时刻。</p>
+          <div class="answer-card">
+            <strong>它解决的问题</strong>
+            <span>“我想去做别的事，但任务还要继续。”</span>
+          </div>
         </div>
-        <div class="scenario-grid">
-          <article class="scenario-card">
-            <span class="number">01</span>
-            <h3>合盖前，先确认</h3>
-            <p>Claude Code、Codex 还在跑时，不用猜这次会不会被中断。</p>
-          </article>
-          <article class="scenario-card">
-            <span class="number">02</span>
-            <h3>长任务，一键陪跑</h3>
-            <p>准备离开一会儿时，直接选择 30 分钟、1 小时或持续陪跑。</p>
-          </article>
-          <article class="scenario-card">
-            <span class="number">03</span>
-            <h3>没插电，看还能撑多久</h3>
-            <p>电池模式下，优先看预计剩余时间，而不是一堆看不懂的参数。</p>
-          </article>
-          <article class="scenario-card">
-            <span class="number">04</span>
-            <h3>跑久了，会提醒你</h3>
-            <p>AI 工具运行一段时间后，温和提示你是否要检查一下。</p>
-          </article>
+        <div class="story-media">
+          <img src="assets/app-store-02-start-guard.png" alt="长任务一键陪跑页面">
         </div>
       </section>
 
-      <section class="showcase" aria-label="产品截图">
-        <div class="showcase-copy">
-          <p class="eyebrow">产品界面</p>
-          <h2>第一眼就知道，下一步该不该离开。</h2>
-          <p>主界面保留最重要的信息：当前任务、电源状态、屏幕、合盖风险和预计续航。设置被收进规则里，不让首页变成控制台。</p>
+      <section class="story panel" id="battery">
+        <div class="story-copy">
+          <span class="step">03</span>
+          <p class="eyebrow">预计续航</p>
+          <h2>没插电时，<br>最重要的是还能跑多久。</h2>
+          <p>不把电池信息拆成一堆技术数字。未接电时，优先展示系统可用的预计剩余时间，并把正在跑的任务放在同一张卡里。</p>
+          <div class="answer-card">
+            <strong>它解决的问题</strong>
+            <span>“这次离开，电量撑不撑得住？”</span>
+          </div>
         </div>
-        <div class="screenshot-stack">
-          <img class="shot shot-main" src="assets/app-store-02-start-guard.png" alt="长任务一键陪跑界面">
-          <img class="shot shot-secondary" src="assets/app-store-03-battery-runtime.png" alt="预计续航提示界面">
-        </div>
-      </section>
-
-      <section class="section" id="features">
-        <div class="section-heading">
-          <p class="eyebrow">它会看什么</p>
-          <h2>只把离开前真正有用的信息放上来。</h2>
-        </div>
-        <div class="feature-list">
-          <div class="feature-row">
-            <span class="feature-icon">⌘</span>
-            <div>
-              <h3>识别正在跑的 AI 工具</h3>
-              <p>关注 Codex、Claude Code、Cursor、Windsurf、Codeium、Trae、扣子、Terminal 等长任务场景。</p>
-            </div>
-          </div>
-          <div class="feature-row">
-            <span class="feature-icon">▣</span>
-            <div>
-              <h3>合盖前风险确认</h3>
-              <p>结合电源、屏幕、合盖和任务状态，用人话告诉你现在是否适合离开。</p>
-            </div>
-          </div>
-          <div class="feature-row">
-            <span class="feature-icon">◴</span>
-            <div>
-              <h3>电量与预计续航</h3>
-              <p>未接电时，把系统可用的预计剩余时间放到更醒目的位置。</p>
-            </div>
-          </div>
-          <div class="feature-row">
-            <span class="feature-icon">✦</span>
-            <div>
-              <h3>温和提醒，不打断工作</h3>
-              <p>像一个轻轻出现的小助手，可以稍后提醒、今日不再提醒或马上检查。</p>
-            </div>
-          </div>
+        <div class="story-media">
+          <img src="assets/app-store-03-battery-runtime.png" alt="预计续航页面">
         </div>
       </section>
 
-      <section class="privacy-panel" id="privacy">
+      <section class="story panel reverse" id="remind">
+        <div class="story-copy">
+          <span class="step">04</span>
+          <p class="eyebrow">温和提醒</p>
+          <h2>AI 工具跑久了，<br>它会轻轻提醒你。</h2>
+          <p>不弹吓人的警告，不打断你工作。只是在合适的时候提醒：要不要检查一下？你可以稍后、今日不再提醒，或立刻查看。</p>
+          <div class="answer-card">
+            <strong>它解决的问题</strong>
+            <span>“我忘了任务还在跑，也忘了检查状态。”</span>
+          </div>
+        </div>
+        <div class="story-media">
+          <img src="assets/app-store-04-auto-watch.png" alt="长任务温和提醒页面">
+        </div>
+      </section>
+
+      <section class="toolbox panel">
+        <div class="toolbox-heading">
+          <p class="eyebrow">为 AI 长任务设计</p>
+          <h2>它关注的是你正在真实使用的工具。</h2>
+        </div>
+        <div class="tool-grid" aria-label="支持场景">
+          <div>Codex</div>
+          <div>Claude Code</div>
+          <div>Cursor</div>
+          <div>Windsurf</div>
+          <div>Codeium</div>
+          <div>Trae</div>
+          <div>扣子 / Coze</div>
+          <div>Terminal</div>
+        </div>
+      </section>
+
+      <section class="privacy-panel panel" id="privacy">
         <div>
           <p class="eyebrow">本机优先</p>
-          <h2>它看状态，不看你的内容。</h2>
+          <h2>它看状态，<br>不看你的内容。</h2>
         </div>
         <p>能合盖么？不需要账号，不上传你的代码、聊天内容或任务文本。它只在本机查看运行状态、电源、屏幕和电量等信息，用来帮你做离开前判断。</p>
       </section>
 
-      <section class="final-cta">
+      <section class="final-cta panel">
         <img src="assets/app-icon.png" alt="" class="cta-icon">
+        <p class="eyebrow">能合盖么？</p>
         <h2>下一次跑 AI 长任务，少一点猜测。</h2>
-        <p>放在 Mac 菜单栏里，需要离开时点一下。</p>
-        <a class="primary-button" href="https://apps.apple.com/cn/app/%E8%83%BD%E5%90%88%E7%9B%96%E4%B9%88/id6774018434?mt=12">下载能合盖么？</a>
+        <a class="primary-button" href="https://apps.apple.com/cn/app/%E8%83%BD%E5%90%88%E7%9B%96%E4%B9%88/id6774018434?mt=12">下载 App</a>
       </section>
     </main>
 
